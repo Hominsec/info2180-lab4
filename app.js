@@ -1,11 +1,15 @@
 window.addEventListener('load',()=>{
-    let searchbutton=document.querySelector("#btn");
+    let searchbutton=document.querySelector(".btn");
 
     const httpRequest = new XMLHttpRequest();
     let url = "superheroes.php";
-    httpRequest.onreadystatechange = listheroes;
-    httpRequest.open('GET', url);
-    httpRequest.send();
+
+    searchbutton.addEventListener("click",()=>{
+        httpRequest.onreadystatechange = listheroes;
+        httpRequest.open('GET', url);
+        httpRequest.send();  
+    });
+    
 
     function listheroes() {
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
