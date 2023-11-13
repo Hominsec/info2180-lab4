@@ -1,0 +1,29 @@
+body{
+    
+}
+header{
+    background-color: blue;
+    font-size: 18px;
+    text-align: center;
+    padding:20px;
+    color:white;
+}
+
+#flex{
+    display:flex;
+    flex-direction: row;
+}
+
+#input_form{
+    width:900px;
+    height:30px;
+}
+
+button{
+    background-color:red;
+}
+
+#temp{
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
